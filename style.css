@@ -68,3 +68,7 @@ a:hover {
     text-align: start;
     gap: 8px;
 }
+
+.ingredients-ul {
+    align-items: start;
+}
