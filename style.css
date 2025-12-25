@@ -15,7 +15,8 @@ body {
     height: 100vh;
 }
 
-header, footer {
+header,
+footer {
     background-color: #1F2937;
     color: #E5E7EB;
     padding: 16px;
@@ -38,12 +39,15 @@ img {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
+    display: inline-block;
+    transition: transform .2s ease-out;
 }
 
-a:hover {
-    text-decoration: underline;
+a:hover,
+a:focus {
+    transform: scale(1.05);
 }
 
 .recipe {
@@ -57,7 +61,7 @@ a:hover {
 }
 
 
-.steps-ol, 
+.steps-ol,
 .description-p {
     display: flex;
     flex-direction: column;
